@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brownBackground" highlightedImage="brownBackground" translatesAutoresizingMaskIntoConstraints="NO" id="biR-7j-7cy">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-7G-asb">
+                                <rect key="frame" x="392" y="442" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthLogo" highlightedImage="earthLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZxA-1O-Z16">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="hME-6W-pRa"/>
+                                            <constraint firstAttribute="width" constant="240" id="nJo-JK-Jya"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BU6-RX-gsb">
+                                <rect key="frame" x="392" y="703" width="240" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playInGreenLabel" translatesAutoresizingMaskIntoConstraints="NO" id="sWV-1Z-QqB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="GSv-Yw-W0n"/>
+                                            <constraint firstAttribute="width" constant="240" id="QXu-BF-cMx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BU6-RX-gsb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="60" id="8cK-zT-ojg"/>
+                            <constraint firstItem="biR-7j-7cy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BpZ-rM-aqc"/>
+                            <constraint firstItem="BU6-RX-gsb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IDi-2q-fxs"/>
+                            <constraint firstItem="GSc-7G-asb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MxR-US-j9h"/>
+                            <constraint firstItem="GSc-7G-asb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-121" id="a0e-e8-rWs"/>
+                            <constraint firstItem="biR-7j-7cy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gvM-Hp-Qff"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="biR-7j-7cy" secondAttribute="bottom" id="szs-2d-VSR"/>
+                            <constraint firstAttribute="trailing" secondItem="biR-7j-7cy" secondAttribute="trailing" id="vrw-d2-hqI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="371.83098591549299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brownBackground" width="1080" height="1920"/>
+        <image name="earthLogo" width="800" height="800"/>
+        <image name="playInGreenLabel" width="827" height="250"/>
+    </resources>
+</document>
